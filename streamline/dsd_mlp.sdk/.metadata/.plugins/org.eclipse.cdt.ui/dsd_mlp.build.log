@@ -1,0 +1,8 @@
+09:30:13 **** Incremental Build of configuration Debug for project dsd_mlp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+09:30:14 Build Finished (took 269ms)
+

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1053067000fs"></ZoomStartTime>
+      <ZoomEndTime time="1098027001fs"></ZoomEndTime>
+      <Cursor1Time time="1057067000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="339"></NameColumnWidth>
+      <ValueColumnWidth column_width="221"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="58" />
+   <wvobject fp_name="/top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/outbuf_we" type="logic">
+      <obj_property name="ElementShortName">outbuf_we</obj_property>
+      <obj_property name="ObjectShortName">outbuf_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/outbuf_addr" type="array">
+      <obj_property name="ElementShortName">outbuf_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">outbuf_addr[6:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/outbuf_data" type="array">
+      <obj_property name="ElementShortName">outbuf_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outbuf_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/c_ref_out" type="array">
+      <obj_property name="ElementShortName">c_ref_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">c_ref_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/IMGNUM" type="array">
+      <obj_property name="ElementShortName">IMGNUM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMGNUM[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/output_addr_width" type="array">
+      <obj_property name="ElementShortName">output_addr_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_addr_width[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider37">
+   </wvobject>
+   <wvobject fp_name="group83" type="group">
+      <obj_property name="label">controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/dut/Global_Control/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/start_i" type="logic">
+         <obj_property name="ElementShortName">start_i</obj_property>
+         <obj_property name="ObjectShortName">start_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/done_intr_o" type="logic">
+         <obj_property name="ElementShortName">done_intr_o</obj_property>
+         <obj_property name="ObjectShortName">done_intr_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/done_led_o" type="logic">
+         <obj_property name="ElementShortName">done_led_o</obj_property>
+         <obj_property name="ObjectShortName">done_led_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/x_buf_rd" type="logic">
+         <obj_property name="ElementShortName">x_buf_rd</obj_property>
+         <obj_property name="ObjectShortName">x_buf_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/x_buf_addr" type="array">
+         <obj_property name="ElementShortName">x_buf_addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">x_buf_addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/w_buf_rd" type="logic">
+         <obj_property name="ElementShortName">w_buf_rd</obj_property>
+         <obj_property name="ObjectShortName">w_buf_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/w_buf_addr" type="array">
+         <obj_property name="ElementShortName">w_buf_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">w_buf_addr[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/w_d_data_sel" type="array">
+         <obj_property name="ElementShortName">w_d_data_sel[4:0]</obj_property>
+         <obj_property name="ObjectShortName">w_d_data_sel[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/mac_rst_n" type="logic">
+         <obj_property name="ElementShortName">mac_rst_n</obj_property>
+         <obj_property name="ObjectShortName">mac_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/relu_en" type="logic">
+         <obj_property name="ElementShortName">relu_en</obj_property>
+         <obj_property name="ObjectShortName">relu_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/shft_en" type="logic">
+         <obj_property name="ElementShortName">shft_en</obj_property>
+         <obj_property name="ObjectShortName">shft_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_en" type="logic">
+         <obj_property name="ElementShortName">acc_en</obj_property>
+         <obj_property name="ObjectShortName">acc_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_rst_n" type="logic">
+         <obj_property name="ElementShortName">acc_rst_n</obj_property>
+         <obj_property name="ObjectShortName">acc_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_rd" type="logic">
+         <obj_property name="ElementShortName">acc_rd</obj_property>
+         <obj_property name="ObjectShortName">acc_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_wr" type="logic">
+         <obj_property name="ElementShortName">acc_wr</obj_property>
+         <obj_property name="ObjectShortName">acc_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/buf_wr_start" type="logic">
+         <obj_property name="ElementShortName">buf_wr_start</obj_property>
+         <obj_property name="ObjectShortName">buf_wr_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/buf_wr_done" type="logic">
+         <obj_property name="ElementShortName">buf_wr_done</obj_property>
+         <obj_property name="ObjectShortName">buf_wr_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/sw_syncchain" type="array">
+         <obj_property name="ElementShortName">sw_syncchain[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sw_syncchain[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/sw_pdet" type="logic">
+         <obj_property name="ElementShortName">sw_pdet</obj_property>
+         <obj_property name="ObjectShortName">sw_pdet</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/img_cntr" type="array">
+         <obj_property name="ElementShortName">img_cntr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">img_cntr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/layer_state" type="array">
+         <obj_property name="ElementShortName">layer_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">layer_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/layer_calc_start" type="logic">
+         <obj_property name="ElementShortName">layer_calc_start</obj_property>
+         <obj_property name="ObjectShortName">layer_calc_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/layer_calc_done" type="logic">
+         <obj_property name="ElementShortName">layer_calc_done</obj_property>
+         <obj_property name="ObjectShortName">layer_calc_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/layer_run" type="logic">
+         <obj_property name="ElementShortName">layer_run</obj_property>
+         <obj_property name="ObjectShortName">layer_run</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/layer_cnt" type="array">
+         <obj_property name="ElementShortName">layer_cnt[8:0]</obj_property>
+         <obj_property name="ObjectShortName">layer_cnt[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/mac_done" type="logic">
+         <obj_property name="ElementShortName">mac_done</obj_property>
+         <obj_property name="ObjectShortName">mac_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/x_buf_rd_w" type="logic">
+         <obj_property name="ElementShortName">x_buf_rd_w</obj_property>
+         <obj_property name="ObjectShortName">x_buf_rd_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/imgrom_addr" type="array">
+         <obj_property name="ElementShortName">imgrom_addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">imgrom_addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/w_buf_rd_w" type="logic">
+         <obj_property name="ElementShortName">w_buf_rd_w</obj_property>
+         <obj_property name="ObjectShortName">w_buf_rd_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/w_buf_addr_reg" type="array">
+         <obj_property name="ElementShortName">w_buf_addr_reg[8:0]</obj_property>
+         <obj_property name="ObjectShortName">w_buf_addr_reg[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_rd_w" type="logic">
+         <obj_property name="ElementShortName">acc_rd_w</obj_property>
+         <obj_property name="ObjectShortName">acc_rd_w</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_ctrl" type="array">
+         <obj_property name="ElementShortName">acc_ctrl[4:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_ctrl[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/w_d_select_data" type="array">
+         <obj_property name="ElementShortName">w_d_select_data[4:0]</obj_property>
+         <obj_property name="ObjectShortName">w_d_select_data[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/mac_rst" type="logic">
+         <obj_property name="ElementShortName">mac_rst</obj_property>
+         <obj_property name="ObjectShortName">mac_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/mac_relu_en" type="logic">
+         <obj_property name="ElementShortName">mac_relu_en</obj_property>
+         <obj_property name="ObjectShortName">mac_relu_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/mac_add" type="logic">
+         <obj_property name="ElementShortName">mac_add</obj_property>
+         <obj_property name="ObjectShortName">mac_add</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_op_cnt" type="array">
+         <obj_property name="ElementShortName">acc_op_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_op_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/acc_op_run" type="logic">
+         <obj_property name="ElementShortName">acc_op_run</obj_property>
+         <obj_property name="ObjectShortName">acc_op_run</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/irq_sr" type="array">
+         <obj_property name="ElementShortName">irq_sr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">irq_sr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/led" type="logic">
+         <obj_property name="ElementShortName">led</obj_property>
+         <obj_property name="ObjectShortName">led</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/image_number" type="array">
+         <obj_property name="ElementShortName">image_number[31:0]</obj_property>
+         <obj_property name="ObjectShortName">image_number[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/input_addr_width" type="array">
+         <obj_property name="ElementShortName">input_addr_width[31:0]</obj_property>
+         <obj_property name="ObjectShortName">input_addr_width[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/Global_Control/ICW" type="array">
+         <obj_property name="ElementShortName">ICW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICW[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider84">
+   </wvobject>
+   <wvobject fp_name="group227" type="group">
+      <obj_property name="label">x_buf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/x_buf_rd" type="logic">
+         <obj_property name="ElementShortName">x_buf_rd</obj_property>
+         <obj_property name="ObjectShortName">x_buf_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/x_buf_addr" type="array">
+         <obj_property name="ElementShortName">x_buf_addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">x_buf_addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/x_data_out_0" type="array">
+         <obj_property name="ElementShortName">x_data_out_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">x_data_out_0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/x_data_out_1" type="array">
+         <obj_property name="ElementShortName">x_data_out_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">x_data_out_1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/x_buf" type="array">
+         <obj_property name="ElementShortName">x_buf[0:8191][31:0]</obj_property>
+         <obj_property name="ObjectShortName">x_buf[0:8191][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/x_buf_dout0" type="array">
+         <obj_property name="ElementShortName">x_buf_dout0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">x_buf_dout0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/x_buf_dout1" type="array">
+         <obj_property name="ElementShortName">x_buf_dout1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">x_buf_dout1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/input_addr_width" type="array">
+         <obj_property name="ElementShortName">input_addr_width[31:0]</obj_property>
+         <obj_property name="ObjectShortName">input_addr_width[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/input_data_width" type="array">
+         <obj_property name="ElementShortName">input_data_width[31:0]</obj_property>
+         <obj_property name="ObjectShortName">input_data_width[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/ROMPATH" type="array">
+         <obj_property name="ElementShortName">ROMPATH[223:0]</obj_property>
+         <obj_property name="ObjectShortName">ROMPATH[223:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/x_buf_inst/ROMHEX" type="array">
+         <obj_property name="ElementShortName">ROMHEX[95:0]</obj_property>
+         <obj_property name="ObjectShortName">ROMHEX[95:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider84">
+   </wvobject>
+   <wvobject fp_name="group234" type="group">
+      <obj_property name="label">w_buf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_tb/dut/w_buf_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/w_buf_inst/w_buf_rd" type="logic">
+         <obj_property name="ElementShortName">w_buf_rd</obj_property>
+         <obj_property name="ObjectShortName">w_buf_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/w_buf_inst/w_buf_addr" type="array">
+         <obj_property name="ElementShortName">w_buf_addr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">w_buf_addr[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/w_buf_inst/packed_data_o" type="array">
+         <obj_property name="ElementShortName">packed_data_o[2303:0]</obj_property>
+         <obj_property name="ObjectShortName">packed_data_o[2303:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider235">
+   </wvobject>
+   <wvobject fp_name="group291" type="group">
+      <obj_property name="label">bc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/acc_wr" type="logic">
+      <obj_property name="ElementShortName">acc_wr</obj_property>
+      <obj_property name="ObjectShortName">acc_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/sel_data" type="array">
+      <obj_property name="ElementShortName">sel_data[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_data[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/acc_addr" type="array">
+      <obj_property name="ElementShortName">acc_addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/x_buf_data_packed" type="array">
+      <obj_property name="ElementShortName">x_buf_data_packed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_buf_data_packed[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/temp_data_packed" type="array">
+      <obj_property name="ElementShortName">temp_data_packed[383:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_data_packed[383:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/mac_data_row_packed" type="array">
+      <obj_property name="ElementShortName">mac_data_row_packed[191:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_data_row_packed[191:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/x_buf_data" type="array">
+      <obj_property name="ElementShortName">x_buf_data[0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_buf_data[0:1][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/mac_data_row" type="array">
+      <obj_property name="ElementShortName">mac_data_row[0:7][23:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_data_row[0:7][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/temp_data" type="array">
+      <obj_property name="ElementShortName">temp_data[0:15][23:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_data[0:15][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/datasel_z" type="array">
+      <obj_property name="ElementShortName">datasel_z[4:0]</obj_property>
+      <obj_property name="ObjectShortName">datasel_z[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/weight_distributor/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider248">
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/relu_en" type="logic">
+      <obj_property name="ElementShortName">relu_en</obj_property>
+      <obj_property name="ObjectShortName">relu_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/shft_en" type="logic">
+      <obj_property name="ElementShortName">shft_en</obj_property>
+      <obj_property name="ObjectShortName">shft_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/acc_en" type="logic">
+      <obj_property name="ElementShortName">acc_en</obj_property>
+      <obj_property name="ObjectShortName">acc_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/shft_reg_addr" type="array">
+      <obj_property name="ElementShortName">shft_reg_addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">shft_reg_addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/shft_reg_rst_n" type="logic">
+      <obj_property name="ElementShortName">shft_reg_rst_n</obj_property>
+      <obj_property name="ObjectShortName">shft_reg_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/shft_reg_rd_en" type="logic">
+      <obj_property name="ElementShortName">shft_reg_rd_en</obj_property>
+      <obj_property name="ObjectShortName">shft_reg_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/shft_reg_wr_en" type="logic">
+      <obj_property name="ElementShortName">shft_reg_wr_en</obj_property>
+      <obj_property name="ObjectShortName">shft_reg_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/w_buf_data_packed" type="array">
+      <obj_property name="ElementShortName">w_buf_data_packed[2303:0]</obj_property>
+      <obj_property name="ObjectShortName">w_buf_data_packed[2303:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/x_buf_data_packed" type="array">
+      <obj_property name="ElementShortName">x_buf_data_packed[191:0]</obj_property>
+      <obj_property name="ObjectShortName">x_buf_data_packed[191:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/temp_data_col_packed" type="array">
+      <obj_property name="ElementShortName">temp_data_col_packed[383:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_data_col_packed[383:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/w_buf_data" type="array">
+      <obj_property name="ElementShortName">w_buf_data[0:128][17:0]</obj_property>
+      <obj_property name="ObjectShortName">w_buf_data[0:128][17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/x_buf_data" type="array">
+      <obj_property name="ElementShortName">x_buf_data[0:7][23:0]</obj_property>
+      <obj_property name="ObjectShortName">x_buf_data[0:7][23:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/temp_result" type="array">
+      <obj_property name="ElementShortName">temp_result[0:15][23:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_result[0:15][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/mac_interconnection" type="array">
+      <obj_property name="ElementShortName">mac_interconnection[0:8][0:15][41:0]</obj_property>
+      <obj_property name="ObjectShortName">mac_interconnection[0:8][0:15][41:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/acc_out" type="array">
+      <obj_property name="ElementShortName">acc_out[0:15][47:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_out[0:15][47:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider266">
+   </wvobject>
+   <wvobject fp_name="group316" type="group">
+      <obj_property name="label">mac</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /relu_en" type="logic">
+         <obj_property name="ElementShortName">relu_en</obj_property>
+         <obj_property name="ObjectShortName">relu_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /shft_en" type="logic">
+         <obj_property name="ElementShortName">shft_en</obj_property>
+         <obj_property name="ObjectShortName">shft_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /acc_en" type="logic">
+         <obj_property name="ElementShortName">acc_en</obj_property>
+         <obj_property name="ObjectShortName">acc_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /weight_data" type="array">
+         <obj_property name="ElementShortName">weight_data[17:0]</obj_property>
+         <obj_property name="ObjectShortName">weight_data[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /intermediate_data" type="array">
+         <obj_property name="ElementShortName">intermediate_data[23:0]</obj_property>
+         <obj_property name="ObjectShortName">intermediate_data[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /acc_data_i" type="array">
+         <obj_property name="ElementShortName">acc_data_i[41:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_data_i[41:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /acc_data_o" type="array">
+         <obj_property name="ElementShortName">acc_data_o[41:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_data_o[41:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /mac_acc_delay" type="logic">
+         <obj_property name="ElementShortName">mac_acc_delay</obj_property>
+         <obj_property name="ObjectShortName">mac_acc_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /mac_acc_delay_1" type="logic">
+         <obj_property name="ElementShortName">mac_acc_delay_1</obj_property>
+         <obj_property name="ObjectShortName">mac_acc_delay_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /op1" type="array">
+         <obj_property name="ElementShortName">op1[17:0]</obj_property>
+         <obj_property name="ObjectShortName">op1[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /op2" type="array">
+         <obj_property name="ElementShortName">op2[23:0]</obj_property>
+         <obj_property name="ObjectShortName">op2[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /mul" type="array">
+         <obj_property name="ElementShortName">mul[41:0]</obj_property>
+         <obj_property name="ObjectShortName">mul[41:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[0].mac_row[0].genblk1.MAC_elements /acc" type="array">
+         <obj_property name="ElementShortName">acc[41:0]</obj_property>
+         <obj_property name="ObjectShortName">acc[41:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider267">
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /acc_addr" type="array">
+      <obj_property name="ElementShortName">acc_addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /acc_rst_n" type="logic">
+      <obj_property name="ElementShortName">acc_rst_n</obj_property>
+      <obj_property name="ObjectShortName">acc_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /acc_wr_en" type="logic">
+      <obj_property name="ElementShortName">acc_wr_en</obj_property>
+      <obj_property name="ObjectShortName">acc_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /acc_rd_en" type="logic">
+      <obj_property name="ElementShortName">acc_rd_en</obj_property>
+      <obj_property name="ObjectShortName">acc_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /acc_data_i" type="array">
+      <obj_property name="ElementShortName">acc_data_i[41:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_data_i[41:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /acc_data_o" type="array">
+      <obj_property name="ElementShortName">acc_data_o[47:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_data_o[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/processing_unit/\mac_column[15].mac_row[8].genblk1.Acc_elements /acc" type="array">
+      <obj_property name="ElementShortName">acc[0:3][47:0]</obj_property>
+      <obj_property name="ObjectShortName">acc[0:3][47:0]</obj_property>
+   </wvobject>
+</wave_config>

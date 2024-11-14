@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 31 21:34:14 2024
+# Process ID: 17528
+# Current directory: C:/Users/ddd31/Desktop/00_RTL_Skeleton
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26844 C:\Users\ddd31\Desktop\00_RTL_Skeleton\dsd_mlp.xpr
+# Log file: C:/Users/ddd31/Desktop/00_RTL_Skeleton/vivado.log
+# Journal file: C:/Users/ddd31/Desktop/00_RTL_Skeleton\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ddd31/Desktop/00_RTL_Skeleton/dsd_mlp.xpr
+update_compile_order -fileset sources_1
+update_module_reference design_1_top_mlp_0_0
+launch_simulation
+launch_simulation

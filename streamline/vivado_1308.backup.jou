@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  2 14:41:26 2024
+# Process ID: 1308
+# Current directory: C:/Users/ddd31/Desktop/streamline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17512 C:\Users\ddd31\Desktop\streamline\dsd_mlp.xpr
+# Log file: C:/Users/ddd31/Desktop/streamline/vivado.log
+# Journal file: C:/Users/ddd31/Desktop/streamline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ddd31/Desktop/streamline/dsd_mlp.xpr
+launch_simulation
+open_wave_config C:/Users/ddd31/Desktop/streamline/tb_mlp_top_behav.wcfg
+source tb_mlp_top_1.tcl
+run all
+update_compile_order -fileset sources_1
+relaunch_sim
+run all
+close_sim

@@ -1,0 +1,1478 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  2 16:33:40 2024
+# Process ID: 19444
+# Current directory: C:/Users/ddd31/Desktop/streamline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1904 C:\Users\ddd31\Desktop\streamline\dsd_mlp.xpr
+# Log file: C:/Users/ddd31/Desktop/streamline/vivado.log
+# Journal file: C:/Users/ddd31/Desktop/streamline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ddd31/Desktop/streamline/dsd_mlp.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/ddd31/Desktop/streamline/tb_pu_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 929.586 ; gain = 288.445
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mlp_top_1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/int8_layer1_hex_reordered.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_mlp_top_1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_inputScale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1_nonerelu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1_norelu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_4
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_5
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER1
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v:112]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER3
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER4
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_full.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_full
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_half.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_half
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/x_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/y_buf_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module y_buf_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sim_1/new/tb_mlp_top_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mlp_top_1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" Line 1. Module mlp_inputScale doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" Line 1. Module local_control_layer1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" Line 1. Module local_control_layer2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" Line 1. Module local_control_layer3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" Line 1. Module local_control_layer4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" Line 1. Module local_control_layer5 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.x_buffer(PATH="C:/Users/ddd31/De...
+Compiling module xil_defaultlib.mlp_inputScale
+Compiling module xil_defaultlib.w_buffer_full(PATH="C:/Users/ddd...
+Compiling module xil_defaultlib.streamline_acc_1
+Compiling module xil_defaultlib.streamline_mac
+Compiling module xil_defaultlib.streamline_operator_1_default
+Compiling module xil_defaultlib.local_control_layer1
+Compiling module xil_defaultlib.top_LAYER1(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer2
+Compiling module xil_defaultlib.streamline_operator_2_default
+Compiling module xil_defaultlib.w_buffer_half(LAYER="2",PATH="C:...
+Compiling module xil_defaultlib.top_LAYER2(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer3
+Compiling module xil_defaultlib.w_buffer_half(ROW_NUM=64,LAYER="...
+Compiling module xil_defaultlib.top_LAYER3(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer4
+Compiling module xil_defaultlib.streamline_operator_4_default
+Compiling module xil_defaultlib.w_buffer_half(COL_NUM=32,ROW_NUM...
+Compiling module xil_defaultlib.top_LAYER4(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer5
+Compiling module xil_defaultlib.streamline_acc_1_norelu
+Compiling module xil_defaultlib.streamline_operator_5_default
+Compiling module xil_defaultlib.w_buffer_full(COL_NUM=10,ROW_NUM...
+Compiling module xil_defaultlib.y_buf_ctrl
+Compiling module xil_defaultlib.top_LAYER5(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.mlp_top(PATH="C:/Users/ddd31/Des...
+Compiling module xil_defaultlib.tb_mlp_top_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mlp_top_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/ddd31/Desktop/streamline/tb_pu_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/ddd31/Desktop/streamline/tb_pu_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_mlp_top_1_behav -key {Behavioral:sim_1:Functional:tb_mlp_top_1} -tclbatch {tb_mlp_top_1.tcl} -protoinst "protoinst_files/bd_48ac.protoinst" -protoinst "protoinst_files/design_1.protoinst" -view {C:/Users/ddd31/Desktop/streamline/tb_mlp_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+open_wave_config C:/Users/ddd31/Desktop/streamline/tb_mlp_top_behav.wcfg
+source tb_mlp_top_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0, done_intr_o = x, done_led_o = x, y_buf_en = x, y_buf_wr_en = x, y_buf_addr = xxxxxxxx, y_buf_data = xxxxxxxx
+At time                 5000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000000, y_buf_data = 00000000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_mlp_top_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 1064.066 ; gain = 99.934
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mlp_top_1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/int8_layer1_hex_reordered.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_mlp_top_1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+At time                    0, done_intr_o = x, done_led_o = x, y_buf_en = x, y_buf_wr_en = x, y_buf_addr = xxxxxxxx, y_buf_data = xxxxxxxx
+At time                 5000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000000, y_buf_data = 00000000
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1064.066 ; gain = 0.000
+run all
+At time             14095000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000000, y_buf_data = 000005e2
+At time             14105000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000004, y_buf_data = ffffff95
+At time             14115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000008, y_buf_data = 000024ea
+At time             14125000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000000c, y_buf_data = 000001a6
+At time             14135000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000010, y_buf_data = fffffd3c
+At time             14145000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000014, y_buf_data = 00000017
+At time             14155000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000018, y_buf_data = fffffc24
+At time             14165000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000001c, y_buf_data = fffffc6f
+At time             14175000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000020, y_buf_data = 00000216
+At time             14185000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000024, y_buf_data = 000000a7
+At time             14195000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000024, y_buf_data = 00000000
+At time             21975000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000028, y_buf_data = 00000000
+At time             22015000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000028, y_buf_data = fffffb00
+At time             22025000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000002c, y_buf_data = 000015a3
+At time             22035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000030, y_buf_data = fffffe5b
+At time             22045000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000034, y_buf_data = 00000807
+At time             22055000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000038, y_buf_data = 0000014e
+At time             22065000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000003c, y_buf_data = 00000247
+At time             22075000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000040, y_buf_data = ffffffc9
+At time             22085000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000044, y_buf_data = fffffb5b
+At time             22095000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000048, y_buf_data = ffffff35
+At time             22105000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000004c, y_buf_data = fffffc25
+At time             22115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000004c, y_buf_data = 00000000
+At time             29895000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000050, y_buf_data = 00000000
+At time             29935000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000050, y_buf_data = 00002b22
+At time             29945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000054, y_buf_data = ffffffb4
+At time             29955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000058, y_buf_data = fffffd25
+At time             29965000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000005c, y_buf_data = 0000034e
+At time             29975000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000060, y_buf_data = ffffff0d
+At time             29985000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000064, y_buf_data = 000001fd
+At time             29995000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000068, y_buf_data = 000001e0
+At time             30005000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000006c, y_buf_data = 000000ae
+At time             30015000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000070, y_buf_data = 00000124
+At time             30025000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000074, y_buf_data = 00000045
+At time             30035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000074, y_buf_data = 00000000
+At time             37815000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000078, y_buf_data = 00000000
+At time             37855000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000078, y_buf_data = fffffcb1
+At time             37865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000007c, y_buf_data = 00000032
+At time             37875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000080, y_buf_data = fffffb4c
+At time             37885000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000084, y_buf_data = 00000075
+At time             37895000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000088, y_buf_data = 0000214d
+At time             37905000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000008c, y_buf_data = 00000046
+At time             37915000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000090, y_buf_data = 0000028d
+At time             37925000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000094, y_buf_data = 0000008a
+At time             37935000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000098, y_buf_data = 00000168
+At time             37945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000009c, y_buf_data = 000001c1
+At time             37955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000009c, y_buf_data = 00000000
+At time             45735000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000a0, y_buf_data = 00000000
+At time             45775000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a0, y_buf_data = fffffa54
+At time             45785000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a4, y_buf_data = 00002269
+At time             45795000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a8, y_buf_data = 00000027
+At time             45805000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ac, y_buf_data = 00000aa1
+At time             45815000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b0, y_buf_data = 00000035
+At time             45825000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b4, y_buf_data = 00000048
+At time             45835000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b8, y_buf_data = fffffcff
+At time             45845000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000bc, y_buf_data = fffffb32
+At time             45855000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c0, y_buf_data = ffffff7b
+At time             45865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c4, y_buf_data = fffff76a
+At time             45875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c4, y_buf_data = 00000000
+At time             53655000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c8, y_buf_data = 00000000
+At time             53695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c8, y_buf_data = 00000436
+At time             53705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000cc, y_buf_data = fffffffc
+At time             53715000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d0, y_buf_data = 000005cd
+At time             53725000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d4, y_buf_data = 000001ec
+At time             53735000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d8, y_buf_data = 00001b73
+At time             53745000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000dc, y_buf_data = 000001dd
+At time             53755000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e0, y_buf_data = 000000f3
+At time             53765000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e4, y_buf_data = ffffffaa
+At time             53775000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e8, y_buf_data = 0000017c
+At time             53785000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ec, y_buf_data = 00000547
+At time             53795000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000ec, y_buf_data = 00000000
+At time             61575000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000f0, y_buf_data = 00000000
+At time             61615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f0, y_buf_data = ffffff79
+At time             61625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f4, y_buf_data = 00000591
+At time             61635000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f8, y_buf_data = fffffec8
+At time             61645000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000fc, y_buf_data = 000005b7
+At time             61655000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000100, y_buf_data = 00000425
+At time             61665000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000104, y_buf_data = 000003a7
+At time             61675000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000108, y_buf_data = fffffe7f
+At time             61685000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000010c, y_buf_data = 000006e4
+At time             61695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000110, y_buf_data = 0000010d
+At time             61705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000114, y_buf_data = 00000eb8
+At time             61715000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000114, y_buf_data = 00000000
+At time             69495000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000118, y_buf_data = 00000000
+At time             69535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000118, y_buf_data = 00000544
+At time             69545000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000011c, y_buf_data = fffffea8
+At time             69555000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000120, y_buf_data = 00000a35
+At time             69565000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000124, y_buf_data = fffff985
+At time             69575000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000128, y_buf_data = fffffb7f
+At time             69585000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000012c, y_buf_data = 0000059b
+At time             69595000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000130, y_buf_data = 0000120e
+At time             69605000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000134, y_buf_data = 00000098
+At time             69615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000138, y_buf_data = 000003fc
+At time             69625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000013c, y_buf_data = 000004e6
+At time             69635000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000013c, y_buf_data = 00000000
+At time             77415000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000140, y_buf_data = 00000000
+At time             77455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000140, y_buf_data = 00000202
+At time             77465000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000144, y_buf_data = fffffe9a
+At time             77475000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000148, y_buf_data = ffffff43
+At time             77485000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000014c, y_buf_data = fffffc12
+At time             77495000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000150, y_buf_data = 00000664
+At time             77505000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000154, y_buf_data = ffffffa5
+At time             77515000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000158, y_buf_data = 00000033
+At time             77525000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000015c, y_buf_data = 0000027f
+At time             77535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000160, y_buf_data = 000001e9
+At time             77545000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000164, y_buf_data = 000022ee
+At time             77555000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000164, y_buf_data = 00000000
+At time             85335000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000168, y_buf_data = 00000000
+At time             85375000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000168, y_buf_data = 000021bf
+At time             85385000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000016c, y_buf_data = 0000002e
+At time             85395000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000170, y_buf_data = 00000052
+At time             85405000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000174, y_buf_data = 00000028
+At time             85415000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000178, y_buf_data = ffffff2c
+At time             85425000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000017c, y_buf_data = 00000094
+At time             85435000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000180, y_buf_data = ffffffd2
+At time             85445000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000184, y_buf_data = ffffff7f
+At time             85455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000188, y_buf_data = 00000065
+At time             85465000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000018c, y_buf_data = 0000022c
+At time             85475000, done_intr_o = 1, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+At time             85555000, done_intr_o = 0, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mlp_top_1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/int8_layer1_hex_reordered.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_mlp_top_1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+At time                    0, done_intr_o = x, done_led_o = x, y_buf_en = x, y_buf_wr_en = x, y_buf_addr = xxxxxxxx, y_buf_data = xxxxxxxx
+At time                 5000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000000, y_buf_data = 00000000
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1073.512 ; gain = 0.000
+run all
+At time             14095000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000000, y_buf_data = 000005e2
+At time             14105000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000004, y_buf_data = ffffff95
+At time             14115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000008, y_buf_data = 000024ea
+At time             14125000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000000c, y_buf_data = 000001a6
+At time             14135000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000010, y_buf_data = fffffd3c
+At time             14145000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000014, y_buf_data = 00000017
+At time             14155000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000018, y_buf_data = fffffc24
+At time             14165000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000001c, y_buf_data = fffffc6f
+At time             14175000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000020, y_buf_data = 00000216
+At time             14185000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000024, y_buf_data = 000000a7
+At time             14195000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000024, y_buf_data = 00000000
+At time             21975000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000028, y_buf_data = 00000000
+At time             22015000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000028, y_buf_data = fffffb00
+At time             22025000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000002c, y_buf_data = 000015a3
+At time             22035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000030, y_buf_data = fffffe5b
+At time             22045000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000034, y_buf_data = 00000807
+At time             22055000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000038, y_buf_data = 0000014e
+At time             22065000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000003c, y_buf_data = 00000247
+At time             22075000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000040, y_buf_data = ffffffc9
+At time             22085000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000044, y_buf_data = fffffb5b
+At time             22095000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000048, y_buf_data = ffffff35
+At time             22105000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000004c, y_buf_data = fffffc25
+At time             22115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000004c, y_buf_data = 00000000
+At time             29895000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000050, y_buf_data = 00000000
+At time             29935000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000050, y_buf_data = 00002b22
+At time             29945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000054, y_buf_data = ffffffb4
+At time             29955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000058, y_buf_data = fffffd25
+At time             29965000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000005c, y_buf_data = 0000034e
+At time             29975000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000060, y_buf_data = ffffff0d
+At time             29985000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000064, y_buf_data = 000001fd
+At time             29995000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000068, y_buf_data = 000001e0
+At time             30005000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000006c, y_buf_data = 000000ae
+At time             30015000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000070, y_buf_data = 00000124
+At time             30025000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000074, y_buf_data = 00000045
+At time             30035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000074, y_buf_data = 00000000
+At time             37815000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000078, y_buf_data = 00000000
+At time             37855000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000078, y_buf_data = fffffcb1
+At time             37865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000007c, y_buf_data = 00000032
+At time             37875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000080, y_buf_data = fffffb4c
+At time             37885000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000084, y_buf_data = 00000075
+At time             37895000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000088, y_buf_data = 0000214d
+At time             37905000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000008c, y_buf_data = 00000046
+At time             37915000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000090, y_buf_data = 0000028d
+At time             37925000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000094, y_buf_data = 0000008a
+At time             37935000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000098, y_buf_data = 00000168
+At time             37945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000009c, y_buf_data = 000001c1
+At time             37955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000009c, y_buf_data = 00000000
+At time             45735000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000a0, y_buf_data = 00000000
+At time             45775000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a0, y_buf_data = fffffa54
+At time             45785000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a4, y_buf_data = 00002269
+At time             45795000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a8, y_buf_data = 00000027
+At time             45805000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ac, y_buf_data = 00000aa1
+At time             45815000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b0, y_buf_data = 00000035
+At time             45825000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b4, y_buf_data = 00000048
+At time             45835000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b8, y_buf_data = fffffcff
+At time             45845000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000bc, y_buf_data = fffffb32
+At time             45855000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c0, y_buf_data = ffffff7b
+At time             45865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c4, y_buf_data = fffff76a
+At time             45875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c4, y_buf_data = 00000000
+At time             53655000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c8, y_buf_data = 00000000
+At time             53695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c8, y_buf_data = 00000436
+At time             53705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000cc, y_buf_data = fffffffc
+At time             53715000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d0, y_buf_data = 000005cd
+At time             53725000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d4, y_buf_data = 000001ec
+At time             53735000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d8, y_buf_data = 00001b73
+At time             53745000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000dc, y_buf_data = 000001dd
+At time             53755000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e0, y_buf_data = 000000f3
+At time             53765000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e4, y_buf_data = ffffffaa
+At time             53775000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e8, y_buf_data = 0000017c
+At time             53785000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ec, y_buf_data = 00000547
+At time             53795000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000ec, y_buf_data = 00000000
+At time             61575000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000f0, y_buf_data = 00000000
+At time             61615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f0, y_buf_data = ffffff79
+At time             61625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f4, y_buf_data = 00000591
+At time             61635000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f8, y_buf_data = fffffec8
+At time             61645000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000fc, y_buf_data = 000005b7
+At time             61655000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000100, y_buf_data = 00000425
+At time             61665000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000104, y_buf_data = 000003a7
+At time             61675000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000108, y_buf_data = fffffe7f
+At time             61685000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000010c, y_buf_data = 000006e4
+At time             61695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000110, y_buf_data = 0000010d
+At time             61705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000114, y_buf_data = 00000eb8
+At time             61715000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000114, y_buf_data = 00000000
+At time             69495000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000118, y_buf_data = 00000000
+At time             69535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000118, y_buf_data = 00000544
+At time             69545000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000011c, y_buf_data = fffffea8
+At time             69555000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000120, y_buf_data = 00000a35
+At time             69565000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000124, y_buf_data = fffff985
+At time             69575000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000128, y_buf_data = fffffb7f
+At time             69585000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000012c, y_buf_data = 0000059b
+At time             69595000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000130, y_buf_data = 0000120e
+At time             69605000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000134, y_buf_data = 00000098
+At time             69615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000138, y_buf_data = 000003fc
+At time             69625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000013c, y_buf_data = 000004e6
+At time             69635000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000013c, y_buf_data = 00000000
+At time             77415000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000140, y_buf_data = 00000000
+At time             77455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000140, y_buf_data = 00000202
+At time             77465000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000144, y_buf_data = fffffe9a
+At time             77475000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000148, y_buf_data = ffffff43
+At time             77485000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000014c, y_buf_data = fffffc12
+At time             77495000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000150, y_buf_data = 00000664
+At time             77505000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000154, y_buf_data = ffffffa5
+At time             77515000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000158, y_buf_data = 00000033
+At time             77525000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000015c, y_buf_data = 0000027f
+At time             77535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000160, y_buf_data = 000001e9
+At time             77545000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000164, y_buf_data = 000022ee
+At time             77555000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000164, y_buf_data = 00000000
+At time             85335000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000168, y_buf_data = 00000000
+At time             85375000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000168, y_buf_data = 000021bf
+At time             85385000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000016c, y_buf_data = 0000002e
+At time             85395000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000170, y_buf_data = 00000052
+At time             85405000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000174, y_buf_data = 00000028
+At time             85415000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000178, y_buf_data = ffffff2c
+At time             85425000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000017c, y_buf_data = 00000094
+At time             85435000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000180, y_buf_data = ffffffd2
+At time             85445000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000184, y_buf_data = ffffff7f
+At time             85455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000188, y_buf_data = 00000065
+At time             85465000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000018c, y_buf_data = 0000022c
+At time             85475000, done_intr_o = 1, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+At time             85555000, done_intr_o = 0, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mlp_top_1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/int8_layer1_hex_reordered.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_mlp_top_1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+At time                    0, done_intr_o = x, done_led_o = x, y_buf_en = x, y_buf_wr_en = x, y_buf_addr = xxxxxxxx, y_buf_data = xxxxxxxx
+At time                 5000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000000, y_buf_data = 00000000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1129.129 ; gain = 0.000
+run all
+At time             14095000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000000, y_buf_data = 000005e2
+At time             14105000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000004, y_buf_data = ffffff95
+At time             14115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000008, y_buf_data = 000024ea
+At time             14125000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000000c, y_buf_data = 000001a6
+At time             14135000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000010, y_buf_data = fffffd3c
+At time             14145000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000014, y_buf_data = 00000017
+At time             14155000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000018, y_buf_data = fffffc24
+At time             14165000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000001c, y_buf_data = fffffc6f
+At time             14175000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000020, y_buf_data = 00000216
+At time             14185000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000024, y_buf_data = 000000a7
+At time             14195000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000024, y_buf_data = 00000000
+At time             21975000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000028, y_buf_data = 00000000
+At time             22015000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000028, y_buf_data = fffffb00
+At time             22025000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000002c, y_buf_data = 000015a3
+At time             22035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000030, y_buf_data = fffffe5b
+At time             22045000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000034, y_buf_data = 00000807
+At time             22055000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000038, y_buf_data = 0000014e
+At time             22065000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000003c, y_buf_data = 00000247
+At time             22075000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000040, y_buf_data = ffffffc9
+At time             22085000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000044, y_buf_data = fffffb5b
+At time             22095000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000048, y_buf_data = ffffff35
+At time             22105000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000004c, y_buf_data = fffffc25
+At time             22115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000004c, y_buf_data = 00000000
+At time             29895000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000050, y_buf_data = 00000000
+At time             29935000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000050, y_buf_data = 00002b22
+At time             29945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000054, y_buf_data = ffffffb4
+At time             29955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000058, y_buf_data = fffffd25
+At time             29965000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000005c, y_buf_data = 0000034e
+At time             29975000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000060, y_buf_data = ffffff0d
+At time             29985000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000064, y_buf_data = 000001fd
+At time             29995000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000068, y_buf_data = 000001e0
+At time             30005000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000006c, y_buf_data = 000000ae
+At time             30015000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000070, y_buf_data = 00000124
+At time             30025000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000074, y_buf_data = 00000045
+At time             30035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000074, y_buf_data = 00000000
+At time             37815000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000078, y_buf_data = 00000000
+At time             37855000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000078, y_buf_data = fffffcb1
+At time             37865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000007c, y_buf_data = 00000032
+At time             37875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000080, y_buf_data = fffffb4c
+At time             37885000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000084, y_buf_data = 00000075
+At time             37895000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000088, y_buf_data = 0000214d
+At time             37905000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000008c, y_buf_data = 00000046
+At time             37915000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000090, y_buf_data = 0000028d
+At time             37925000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000094, y_buf_data = 0000008a
+At time             37935000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000098, y_buf_data = 00000168
+At time             37945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000009c, y_buf_data = 000001c1
+At time             37955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000009c, y_buf_data = 00000000
+At time             45735000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000a0, y_buf_data = 00000000
+At time             45775000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a0, y_buf_data = fffffa54
+At time             45785000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a4, y_buf_data = 00002269
+At time             45795000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a8, y_buf_data = 00000027
+At time             45805000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ac, y_buf_data = 00000aa1
+At time             45815000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b0, y_buf_data = 00000035
+At time             45825000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b4, y_buf_data = 00000048
+At time             45835000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b8, y_buf_data = fffffcff
+At time             45845000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000bc, y_buf_data = fffffb32
+At time             45855000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c0, y_buf_data = ffffff7b
+At time             45865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c4, y_buf_data = fffff76a
+At time             45875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c4, y_buf_data = 00000000
+At time             53655000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c8, y_buf_data = 00000000
+At time             53695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c8, y_buf_data = 00000436
+At time             53705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000cc, y_buf_data = fffffffc
+At time             53715000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d0, y_buf_data = 000005cd
+At time             53725000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d4, y_buf_data = 000001ec
+At time             53735000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d8, y_buf_data = 00001b73
+At time             53745000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000dc, y_buf_data = 000001dd
+At time             53755000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e0, y_buf_data = 000000f3
+At time             53765000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e4, y_buf_data = ffffffaa
+At time             53775000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e8, y_buf_data = 0000017c
+At time             53785000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ec, y_buf_data = 00000547
+At time             53795000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000ec, y_buf_data = 00000000
+At time             61575000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000f0, y_buf_data = 00000000
+At time             61615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f0, y_buf_data = ffffff79
+At time             61625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f4, y_buf_data = 00000591
+At time             61635000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f8, y_buf_data = fffffec8
+At time             61645000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000fc, y_buf_data = 000005b7
+At time             61655000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000100, y_buf_data = 00000425
+At time             61665000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000104, y_buf_data = 000003a7
+At time             61675000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000108, y_buf_data = fffffe7f
+At time             61685000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000010c, y_buf_data = 000006e4
+At time             61695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000110, y_buf_data = 0000010d
+At time             61705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000114, y_buf_data = 00000eb8
+At time             61715000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000114, y_buf_data = 00000000
+At time             69495000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000118, y_buf_data = 00000000
+At time             69535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000118, y_buf_data = 00000544
+At time             69545000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000011c, y_buf_data = fffffea8
+At time             69555000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000120, y_buf_data = 00000a35
+At time             69565000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000124, y_buf_data = fffff985
+At time             69575000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000128, y_buf_data = fffffb7f
+At time             69585000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000012c, y_buf_data = 0000059b
+At time             69595000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000130, y_buf_data = 0000120e
+At time             69605000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000134, y_buf_data = 00000098
+At time             69615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000138, y_buf_data = 000003fc
+At time             69625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000013c, y_buf_data = 000004e6
+At time             69635000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000013c, y_buf_data = 00000000
+At time             77415000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000140, y_buf_data = 00000000
+At time             77455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000140, y_buf_data = 00000202
+At time             77465000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000144, y_buf_data = fffffe9a
+At time             77475000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000148, y_buf_data = ffffff43
+At time             77485000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000014c, y_buf_data = fffffc12
+At time             77495000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000150, y_buf_data = 00000664
+At time             77505000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000154, y_buf_data = ffffffa5
+At time             77515000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000158, y_buf_data = 00000033
+At time             77525000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000015c, y_buf_data = 0000027f
+At time             77535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000160, y_buf_data = 000001e9
+At time             77545000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000164, y_buf_data = 000022ee
+At time             77555000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000164, y_buf_data = 00000000
+At time             85335000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000168, y_buf_data = 00000000
+At time             85375000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000168, y_buf_data = 000021bf
+At time             85385000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000016c, y_buf_data = 0000002e
+At time             85395000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000170, y_buf_data = 00000052
+At time             85405000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000174, y_buf_data = 00000028
+At time             85415000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000178, y_buf_data = ffffff2c
+At time             85425000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000017c, y_buf_data = 00000094
+At time             85435000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000180, y_buf_data = ffffffd2
+At time             85445000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000184, y_buf_data = ffffff7f
+At time             85455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000188, y_buf_data = 00000065
+At time             85465000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000018c, y_buf_data = 0000022c
+At time             85475000, done_intr_o = 1, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+At time             85555000, done_intr_o = 0, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mlp_top_1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/int8_layer1_hex_reordered.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_mlp_top_1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_inputScale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1_nonerelu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1_norelu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_4
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_5
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER1
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v:112]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER3
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER4
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_full.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_full
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_half.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_half
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/x_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/y_buf_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module y_buf_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sim_1/new/tb_mlp_top_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mlp_top_1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1129.129 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" Line 1. Module mlp_inputScale doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" Line 1. Module local_control_layer1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" Line 1. Module local_control_layer2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" Line 1. Module local_control_layer3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" Line 1. Module local_control_layer4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" Line 1. Module local_control_layer5 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.x_buffer(PATH="C:/Users/ddd31/De...
+Compiling module xil_defaultlib.mlp_inputScale
+Compiling module xil_defaultlib.w_buffer_full(PATH="C:/Users/ddd...
+Compiling module xil_defaultlib.streamline_acc_1
+Compiling module xil_defaultlib.streamline_mac
+Compiling module xil_defaultlib.streamline_operator_1_default
+Compiling module xil_defaultlib.local_control_layer1
+Compiling module xil_defaultlib.top_LAYER1(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer2
+Compiling module xil_defaultlib.streamline_operator_2_default
+Compiling module xil_defaultlib.w_buffer_half(LAYER="2",PATH="C:...
+Compiling module xil_defaultlib.top_LAYER2(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer3
+Compiling module xil_defaultlib.w_buffer_half(ROW_NUM=64,LAYER="...
+Compiling module xil_defaultlib.top_LAYER3(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer4
+Compiling module xil_defaultlib.streamline_operator_4_default
+Compiling module xil_defaultlib.w_buffer_half(COL_NUM=32,ROW_NUM...
+Compiling module xil_defaultlib.top_LAYER4(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer5
+Compiling module xil_defaultlib.streamline_acc_1_norelu
+Compiling module xil_defaultlib.streamline_operator_5_default
+Compiling module xil_defaultlib.w_buffer_full(COL_NUM=10,ROW_NUM...
+Compiling module xil_defaultlib.y_buf_ctrl
+Compiling module xil_defaultlib.top_LAYER5(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.mlp_top(PATH="C:/Users/ddd31/Des...
+Compiling module xil_defaultlib.tb_mlp_top_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mlp_top_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+At time                    0, done_intr_o = x, done_led_o = x, y_buf_en = x, y_buf_wr_en = x, y_buf_addr = xxxxxxxx, y_buf_data = xxxxxxxx
+At time                 1000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000000, y_buf_data = 00000000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1129.129 ; gain = 0.000
+run all
+At time              2939000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000000, y_buf_data = 000005e2
+At time              2941000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000004, y_buf_data = ffffff95
+At time              2943000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000008, y_buf_data = 000024ea
+At time              2945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000000c, y_buf_data = 000001a6
+At time              2947000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000010, y_buf_data = fffffd3c
+At time              2949000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000014, y_buf_data = 00000017
+At time              2951000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000018, y_buf_data = fffffc24
+At time              2953000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000001c, y_buf_data = fffffc6f
+At time              2955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000020, y_buf_data = 00000216
+At time              2957000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000024, y_buf_data = 000000a7
+At time              2959000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000024, y_buf_data = 00000000
+At time              4515000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000028, y_buf_data = 00000000
+At time              4523000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000028, y_buf_data = fffffb00
+At time              4525000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000002c, y_buf_data = 000015a3
+At time              4527000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000030, y_buf_data = fffffe5b
+At time              4529000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000034, y_buf_data = 00000807
+At time              4531000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000038, y_buf_data = 0000014e
+At time              4533000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000003c, y_buf_data = 00000247
+At time              4535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000040, y_buf_data = ffffffc9
+At time              4537000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000044, y_buf_data = fffffb5b
+At time              4539000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000048, y_buf_data = ffffff35
+At time              4541000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000004c, y_buf_data = fffffc25
+At time              4543000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000004c, y_buf_data = 00000000
+At time              6099000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000050, y_buf_data = 00000000
+At time              6107000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000050, y_buf_data = 00002b22
+At time              6109000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000054, y_buf_data = ffffffb4
+At time              6111000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000058, y_buf_data = fffffd25
+At time              6113000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000005c, y_buf_data = 0000034e
+At time              6115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000060, y_buf_data = ffffff0d
+At time              6117000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000064, y_buf_data = 000001fd
+At time              6119000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000068, y_buf_data = 000001e0
+At time              6121000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000006c, y_buf_data = 000000ae
+At time              6123000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000070, y_buf_data = 00000124
+At time              6125000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000074, y_buf_data = 00000045
+At time              6127000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000074, y_buf_data = 00000000
+At time              7683000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000078, y_buf_data = 00000000
+At time              7691000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000078, y_buf_data = fffffcb1
+At time              7693000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000007c, y_buf_data = 00000032
+At time              7695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000080, y_buf_data = fffffb4c
+At time              7697000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000084, y_buf_data = 00000075
+At time              7699000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000088, y_buf_data = 0000214d
+At time              7701000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000008c, y_buf_data = 00000046
+At time              7703000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000090, y_buf_data = 0000028d
+At time              7705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000094, y_buf_data = 0000008a
+At time              7707000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000098, y_buf_data = 00000168
+At time              7709000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000009c, y_buf_data = 000001c1
+At time              7711000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000009c, y_buf_data = 00000000
+At time              9267000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000a0, y_buf_data = 00000000
+At time              9275000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a0, y_buf_data = fffffa54
+At time              9277000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a4, y_buf_data = 00002269
+At time              9279000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a8, y_buf_data = 00000027
+At time              9281000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ac, y_buf_data = 00000aa1
+At time              9283000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b0, y_buf_data = 00000035
+At time              9285000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b4, y_buf_data = 00000048
+At time              9287000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b8, y_buf_data = fffffcff
+At time              9289000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000bc, y_buf_data = fffffb32
+At time              9291000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c0, y_buf_data = ffffff7b
+At time              9293000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c4, y_buf_data = fffff76a
+At time              9295000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c4, y_buf_data = 00000000
+At time             10851000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c8, y_buf_data = 00000000
+At time             10859000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c8, y_buf_data = 00000436
+At time             10861000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000cc, y_buf_data = fffffffc
+At time             10863000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d0, y_buf_data = 000005cd
+At time             10865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d4, y_buf_data = 000001ec
+At time             10867000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d8, y_buf_data = 00001b73
+At time             10869000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000dc, y_buf_data = 000001dd
+At time             10871000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e0, y_buf_data = 000000f3
+At time             10873000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e4, y_buf_data = ffffffaa
+At time             10875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e8, y_buf_data = 0000017c
+At time             10877000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ec, y_buf_data = 00000547
+At time             10879000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000ec, y_buf_data = 00000000
+At time             12435000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000f0, y_buf_data = 00000000
+At time             12443000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f0, y_buf_data = ffffff79
+At time             12445000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f4, y_buf_data = 00000591
+At time             12447000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f8, y_buf_data = fffffec8
+At time             12449000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000fc, y_buf_data = 000005b7
+At time             12451000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000100, y_buf_data = 00000425
+At time             12453000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000104, y_buf_data = 000003a7
+At time             12455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000108, y_buf_data = fffffe7f
+At time             12457000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000010c, y_buf_data = 000006e4
+At time             12459000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000110, y_buf_data = 0000010d
+At time             12461000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000114, y_buf_data = 00000eb8
+At time             12463000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000114, y_buf_data = 00000000
+At time             14019000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000118, y_buf_data = 00000000
+At time             14027000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000118, y_buf_data = 00000544
+At time             14029000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000011c, y_buf_data = fffffea8
+At time             14031000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000120, y_buf_data = 00000a35
+At time             14033000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000124, y_buf_data = fffff985
+At time             14035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000128, y_buf_data = fffffb7f
+At time             14037000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000012c, y_buf_data = 0000059b
+At time             14039000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000130, y_buf_data = 0000120e
+At time             14041000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000134, y_buf_data = 00000098
+At time             14043000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000138, y_buf_data = 000003fc
+At time             14045000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000013c, y_buf_data = 000004e6
+At time             14047000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000013c, y_buf_data = 00000000
+run all
+At time             15603000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000140, y_buf_data = 00000000
+At time             15611000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000140, y_buf_data = 00000202
+At time             15613000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000144, y_buf_data = fffffe9a
+At time             15615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000148, y_buf_data = ffffff43
+At time             15617000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000014c, y_buf_data = fffffc12
+At time             15619000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000150, y_buf_data = 00000664
+At time             15621000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000154, y_buf_data = ffffffa5
+At time             15623000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000158, y_buf_data = 00000033
+At time             15625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000015c, y_buf_data = 0000027f
+At time             15627000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000160, y_buf_data = 000001e9
+At time             15629000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000164, y_buf_data = 000022ee
+At time             15631000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000164, y_buf_data = 00000000
+At time             17187000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000168, y_buf_data = 00000000
+At time             17195000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000168, y_buf_data = 000021bf
+At time             17197000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000016c, y_buf_data = 0000002e
+At time             17199000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000170, y_buf_data = 00000052
+At time             17201000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000174, y_buf_data = 00000028
+At time             17203000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000178, y_buf_data = ffffff2c
+At time             17205000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000017c, y_buf_data = 00000094
+At time             17207000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000180, y_buf_data = ffffffd2
+At time             17209000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000184, y_buf_data = ffffff7f
+At time             17211000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000188, y_buf_data = 00000065
+At time             17213000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000018c, y_buf_data = 0000022c
+At time             17215000, done_intr_o = 1, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+At time             17231000, done_intr_o = 0, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mlp_top_1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/int8_layer1_hex_reordered.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_mlp_top_1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_inputScale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1_nonerelu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1_norelu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_4
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_5
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER1
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v:112]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER3
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER4
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_full.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_full
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_half.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_half
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/x_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/y_buf_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module y_buf_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sim_1/new/tb_mlp_top_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mlp_top_1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" Line 1. Module mlp_inputScale doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" Line 1. Module local_control_layer1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" Line 1. Module local_control_layer2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" Line 1. Module local_control_layer3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" Line 1. Module local_control_layer4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" Line 1. Module local_control_layer5 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.x_buffer(PATH="C:/Users/ddd31/De...
+Compiling module xil_defaultlib.mlp_inputScale
+Compiling module xil_defaultlib.w_buffer_full(PATH="C:/Users/ddd...
+Compiling module xil_defaultlib.streamline_acc_1
+Compiling module xil_defaultlib.streamline_mac
+Compiling module xil_defaultlib.streamline_operator_1_default
+Compiling module xil_defaultlib.local_control_layer1
+Compiling module xil_defaultlib.top_LAYER1(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer2
+Compiling module xil_defaultlib.streamline_operator_2_default
+Compiling module xil_defaultlib.w_buffer_half(LAYER="2",PATH="C:...
+Compiling module xil_defaultlib.top_LAYER2(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer3
+Compiling module xil_defaultlib.w_buffer_half(ROW_NUM=64,LAYER="...
+Compiling module xil_defaultlib.top_LAYER3(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer4
+Compiling module xil_defaultlib.streamline_operator_4_default
+Compiling module xil_defaultlib.w_buffer_half(COL_NUM=32,ROW_NUM...
+Compiling module xil_defaultlib.top_LAYER4(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer5
+Compiling module xil_defaultlib.streamline_acc_1_norelu
+Compiling module xil_defaultlib.streamline_operator_5_default
+Compiling module xil_defaultlib.w_buffer_full(COL_NUM=10,ROW_NUM...
+Compiling module xil_defaultlib.y_buf_ctrl
+Compiling module xil_defaultlib.top_LAYER5(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.mlp_top(PATH="C:/Users/ddd31/Des...
+Compiling module xil_defaultlib.tb_mlp_top_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mlp_top_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+At time                    0, done_intr_o = x, done_led_o = x, y_buf_en = x, y_buf_wr_en = x, y_buf_addr = xxxxxxxx, y_buf_data = xxxxxxxx
+At time                 1000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000000, y_buf_data = 00000000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1129.129 ; gain = 0.000
+run all
+At time              2939000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000000, y_buf_data = 000005e2
+At time              2941000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000004, y_buf_data = ffffff95
+At time              2943000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000008, y_buf_data = 000024ea
+At time              2945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000000c, y_buf_data = 000001a6
+At time              2947000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000010, y_buf_data = fffffd3c
+At time              2949000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000014, y_buf_data = 00000017
+At time              2951000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000018, y_buf_data = fffffc24
+At time              2953000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000001c, y_buf_data = fffffc6f
+At time              2955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000020, y_buf_data = 00000216
+At time              2957000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000024, y_buf_data = 000000a7
+At time              2959000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000024, y_buf_data = 00000000
+At time              4515000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000028, y_buf_data = 00000000
+At time              4523000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000028, y_buf_data = fffffb00
+At time              4525000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000002c, y_buf_data = 000015a3
+At time              4527000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000030, y_buf_data = fffffe5b
+At time              4529000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000034, y_buf_data = 00000807
+At time              4531000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000038, y_buf_data = 0000014e
+At time              4533000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000003c, y_buf_data = 00000247
+At time              4535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000040, y_buf_data = ffffffc9
+At time              4537000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000044, y_buf_data = fffffb5b
+At time              4539000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000048, y_buf_data = ffffff35
+At time              4541000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000004c, y_buf_data = fffffc25
+At time              4543000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000004c, y_buf_data = 00000000
+At time              6099000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000050, y_buf_data = 00000000
+At time              6107000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000050, y_buf_data = 00002b22
+At time              6109000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000054, y_buf_data = ffffffb4
+At time              6111000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000058, y_buf_data = fffffd25
+At time              6113000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000005c, y_buf_data = 0000034e
+At time              6115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000060, y_buf_data = ffffff0d
+At time              6117000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000064, y_buf_data = 000001fd
+At time              6119000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000068, y_buf_data = 000001e0
+At time              6121000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000006c, y_buf_data = 000000ae
+At time              6123000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000070, y_buf_data = 00000124
+At time              6125000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000074, y_buf_data = 00000045
+At time              6127000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000074, y_buf_data = 00000000
+At time              7683000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000078, y_buf_data = 00000000
+At time              7691000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000078, y_buf_data = fffffcb1
+At time              7693000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000007c, y_buf_data = 00000032
+At time              7695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000080, y_buf_data = fffffb4c
+At time              7697000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000084, y_buf_data = 00000075
+At time              7699000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000088, y_buf_data = 0000214d
+At time              7701000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000008c, y_buf_data = 00000046
+At time              7703000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000090, y_buf_data = 0000028d
+At time              7705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000094, y_buf_data = 0000008a
+At time              7707000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000098, y_buf_data = 00000168
+At time              7709000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000009c, y_buf_data = 000001c1
+At time              7711000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000009c, y_buf_data = 00000000
+At time              9267000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000a0, y_buf_data = 00000000
+At time              9275000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a0, y_buf_data = fffffa54
+At time              9277000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a4, y_buf_data = 00002269
+At time              9279000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a8, y_buf_data = 00000027
+At time              9281000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ac, y_buf_data = 00000aa1
+At time              9283000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b0, y_buf_data = 00000035
+At time              9285000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b4, y_buf_data = 00000048
+At time              9287000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b8, y_buf_data = fffffcff
+At time              9289000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000bc, y_buf_data = fffffb32
+At time              9291000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c0, y_buf_data = ffffff7b
+At time              9293000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c4, y_buf_data = fffff76a
+At time              9295000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c4, y_buf_data = 00000000
+At time             10851000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c8, y_buf_data = 00000000
+At time             10859000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c8, y_buf_data = 00000436
+At time             10861000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000cc, y_buf_data = fffffffc
+At time             10863000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d0, y_buf_data = 000005cd
+At time             10865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d4, y_buf_data = 000001ec
+At time             10867000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d8, y_buf_data = 00001b73
+At time             10869000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000dc, y_buf_data = 000001dd
+At time             10871000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e0, y_buf_data = 000000f3
+At time             10873000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e4, y_buf_data = ffffffaa
+At time             10875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e8, y_buf_data = 0000017c
+At time             10877000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ec, y_buf_data = 00000547
+At time             10879000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000ec, y_buf_data = 00000000
+At time             12435000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000f0, y_buf_data = 00000000
+At time             12443000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f0, y_buf_data = ffffff79
+At time             12445000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f4, y_buf_data = 00000591
+At time             12447000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f8, y_buf_data = fffffec8
+At time             12449000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000fc, y_buf_data = 000005b7
+At time             12451000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000100, y_buf_data = 00000425
+At time             12453000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000104, y_buf_data = 000003a7
+At time             12455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000108, y_buf_data = fffffe7f
+At time             12457000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000010c, y_buf_data = 000006e4
+At time             12459000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000110, y_buf_data = 0000010d
+At time             12461000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000114, y_buf_data = 00000eb8
+At time             12463000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000114, y_buf_data = 00000000
+At time             14019000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000118, y_buf_data = 00000000
+At time             14027000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000118, y_buf_data = 00000544
+At time             14029000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000011c, y_buf_data = fffffea8
+At time             14031000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000120, y_buf_data = 00000a35
+At time             14033000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000124, y_buf_data = fffff985
+At time             14035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000128, y_buf_data = fffffb7f
+At time             14037000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000012c, y_buf_data = 0000059b
+At time             14039000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000130, y_buf_data = 0000120e
+At time             14041000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000134, y_buf_data = 00000098
+At time             14043000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000138, y_buf_data = 000003fc
+At time             14045000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000013c, y_buf_data = 000004e6
+At time             14047000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000013c, y_buf_data = 00000000
+At time             15603000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000140, y_buf_data = 00000000
+At time             15611000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000140, y_buf_data = 00000202
+At time             15613000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000144, y_buf_data = fffffe9a
+At time             15615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000148, y_buf_data = ffffff43
+At time             15617000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000014c, y_buf_data = fffffc12
+At time             15619000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000150, y_buf_data = 00000664
+At time             15621000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000154, y_buf_data = ffffffa5
+At time             15623000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000158, y_buf_data = 00000033
+At time             15625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000015c, y_buf_data = 0000027f
+At time             15627000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000160, y_buf_data = 000001e9
+At time             15629000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000164, y_buf_data = 000022ee
+At time             15631000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000164, y_buf_data = 00000000
+At time             17187000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000168, y_buf_data = 00000000
+At time             17195000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000168, y_buf_data = 000021bf
+At time             17197000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000016c, y_buf_data = 0000002e
+At time             17199000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000170, y_buf_data = 00000052
+At time             17201000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000174, y_buf_data = 00000028
+At time             17203000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000178, y_buf_data = ffffff2c
+At time             17205000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000017c, y_buf_data = 00000094
+At time             17207000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000180, y_buf_data = ffffffd2
+At time             17209000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000184, y_buf_data = ffffff7f
+At time             17211000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000188, y_buf_data = 00000065
+At time             17213000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000018c, y_buf_data = 0000022c
+At time             17215000, done_intr_o = 1, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+At time             17231000, done_intr_o = 0, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_mlp_top_1' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/int8_layer1_hex_reordered.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj tb_mlp_top_1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_control_layer5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_inputScale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mlp_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_acc_1_nonerelu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_acc_1_norelu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_mac
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_4
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_4.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module streamline_operator_5
+INFO: [VRFC 10-2458] undeclared symbol i_MAC_RELU_EN, assumed default net type wire [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/streamline_operator_5.v:71]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER1
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer1.v:112]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER3
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer3.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER4
+WARNING: [VRFC 10-986] literal value truncated to fit in 33 bits [C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer4.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/top_layer5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_LAYER5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_full.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_full
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/w_buffer_half.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_buffer_half
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/x_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/y_buf_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module y_buf_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sim_1/new/tb_mlp_top_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mlp_top_1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1139.434 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Generating merged BMM file for the design top 'tb_mlp_top_1'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim'
+"xelab -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" Line 1. Module mlp_inputScale doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" Line 1. Module local_control_layer1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" Line 1. Module local_control_layer2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" Line 1. Module local_control_layer3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" Line 1. Module local_control_layer4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" Line 1. Module local_control_layer5 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.x_buffer(PATH="C:/Users/ddd31/De...
+Compiling module xil_defaultlib.mlp_inputScale
+Compiling module xil_defaultlib.w_buffer_full(PATH="C:/Users/ddd...
+Compiling module xil_defaultlib.streamline_acc_1
+Compiling module xil_defaultlib.streamline_mac
+Compiling module xil_defaultlib.streamline_operator_1_default
+Compiling module xil_defaultlib.local_control_layer1
+Compiling module xil_defaultlib.top_LAYER1(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer2
+Compiling module xil_defaultlib.streamline_operator_2_default
+Compiling module xil_defaultlib.w_buffer_half(LAYER="2",PATH="C:...
+Compiling module xil_defaultlib.top_LAYER2(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer3
+Compiling module xil_defaultlib.w_buffer_half(ROW_NUM=64,LAYER="...
+Compiling module xil_defaultlib.top_LAYER3(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer4
+Compiling module xil_defaultlib.streamline_operator_4_default
+Compiling module xil_defaultlib.w_buffer_half(COL_NUM=32,ROW_NUM...
+Compiling module xil_defaultlib.top_LAYER4(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer5
+Compiling module xil_defaultlib.streamline_acc_1_norelu
+Compiling module xil_defaultlib.streamline_operator_5_default
+Compiling module xil_defaultlib.w_buffer_full(COL_NUM=10,ROW_NUM...
+Compiling module xil_defaultlib.y_buf_ctrl
+Compiling module xil_defaultlib.top_LAYER5(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.mlp_top(PATH="C:/Users/ddd31/Des...
+Compiling module xil_defaultlib.tb_mlp_top_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mlp_top_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_48ac.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_48ac.protoinst for the following reason(s):
+There are no instances of module "bd_48ac" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+At time                    0, done_intr_o = x, done_led_o = x, y_buf_en = x, y_buf_wr_en = x, y_buf_addr = xxxxxxxx, y_buf_data = xxxxxxxx
+At time                 1000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000000, y_buf_data = 00000000
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1139.434 ; gain = 0.000
+run all
+At time              2939000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000000, y_buf_data = 000005e2
+At time              2941000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000004, y_buf_data = ffffff95
+At time              2943000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000008, y_buf_data = 000024ea
+At time              2945000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000000c, y_buf_data = 000001a6
+At time              2947000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000010, y_buf_data = fffffd3c
+At time              2949000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000014, y_buf_data = 00000017
+At time              2951000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000018, y_buf_data = fffffc24
+At time              2953000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000001c, y_buf_data = fffffc6f
+At time              2955000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000020, y_buf_data = 00000216
+At time              2957000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000024, y_buf_data = 000000a7
+At time              2959000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000024, y_buf_data = 00000000
+At time              4515000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000028, y_buf_data = 00000000
+At time              4523000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000028, y_buf_data = fffffb00
+At time              4525000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000002c, y_buf_data = 000015a3
+At time              4527000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000030, y_buf_data = fffffe5b
+At time              4529000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000034, y_buf_data = 00000807
+At time              4531000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000038, y_buf_data = 0000014e
+At time              4533000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000003c, y_buf_data = 00000247
+At time              4535000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000040, y_buf_data = ffffffc9
+At time              4537000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000044, y_buf_data = fffffb5b
+At time              4539000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000048, y_buf_data = ffffff35
+At time              4541000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000004c, y_buf_data = fffffc25
+At time              4543000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000004c, y_buf_data = 00000000
+At time              6099000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000050, y_buf_data = 00000000
+At time              6107000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000050, y_buf_data = 00002b22
+At time              6109000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000054, y_buf_data = ffffffb4
+At time              6111000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000058, y_buf_data = fffffd25
+At time              6113000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000005c, y_buf_data = 0000034e
+At time              6115000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000060, y_buf_data = ffffff0d
+At time              6117000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000064, y_buf_data = 000001fd
+At time              6119000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000068, y_buf_data = 000001e0
+At time              6121000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000006c, y_buf_data = 000000ae
+At time              6123000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000070, y_buf_data = 00000124
+At time              6125000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000074, y_buf_data = 00000045
+At time              6127000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000074, y_buf_data = 00000000
+At time              7683000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000078, y_buf_data = 00000000
+At time              7691000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000078, y_buf_data = fffffcb1
+At time              7693000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000007c, y_buf_data = 00000032
+At time              7695000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000080, y_buf_data = fffffb4c
+At time              7697000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000084, y_buf_data = 00000075
+At time              7699000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000088, y_buf_data = 0000214d
+At time              7701000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000008c, y_buf_data = 00000046
+At time              7703000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000090, y_buf_data = 0000028d
+At time              7705000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000094, y_buf_data = 0000008a
+At time              7707000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000098, y_buf_data = 00000168
+At time              7709000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000009c, y_buf_data = 000001c1
+At time              7711000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000009c, y_buf_data = 00000000
+At time              9267000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000a0, y_buf_data = 00000000
+At time              9275000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a0, y_buf_data = fffffa54
+At time              9277000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a4, y_buf_data = 00002269
+At time              9279000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000a8, y_buf_data = 00000027
+At time              9281000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ac, y_buf_data = 00000aa1
+At time              9283000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b0, y_buf_data = 00000035
+At time              9285000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b4, y_buf_data = 00000048
+At time              9287000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000b8, y_buf_data = fffffcff
+At time              9289000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000bc, y_buf_data = fffffb32
+At time              9291000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c0, y_buf_data = ffffff7b
+At time              9293000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c4, y_buf_data = fffff76a
+At time              9295000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c4, y_buf_data = 00000000
+At time             10851000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000c8, y_buf_data = 00000000
+At time             10859000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000c8, y_buf_data = 00000436
+At time             10861000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000cc, y_buf_data = fffffffc
+At time             10863000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d0, y_buf_data = 000005cd
+At time             10865000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d4, y_buf_data = 000001ec
+At time             10867000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000d8, y_buf_data = 00001b73
+At time             10869000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000dc, y_buf_data = 000001dd
+At time             10871000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e0, y_buf_data = 000000f3
+At time             10873000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e4, y_buf_data = ffffffaa
+At time             10875000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000e8, y_buf_data = 0000017c
+At time             10877000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000ec, y_buf_data = 00000547
+At time             10879000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000ec, y_buf_data = 00000000
+At time             12435000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 000000f0, y_buf_data = 00000000
+At time             12443000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f0, y_buf_data = ffffff79
+At time             12445000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f4, y_buf_data = 00000591
+At time             12447000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000f8, y_buf_data = fffffec8
+At time             12449000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 000000fc, y_buf_data = 000005b7
+At time             12451000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000100, y_buf_data = 00000425
+At time             12453000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000104, y_buf_data = 000003a7
+At time             12455000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000108, y_buf_data = fffffe7f
+At time             12457000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000010c, y_buf_data = 000006e4
+At time             12459000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000110, y_buf_data = 0000010d
+At time             12461000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000114, y_buf_data = 00000eb8
+At time             12463000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000114, y_buf_data = 00000000
+At time             14019000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000118, y_buf_data = 00000000
+At time             14027000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000118, y_buf_data = 00000544
+At time             14029000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000011c, y_buf_data = fffffea8
+At time             14031000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000120, y_buf_data = 00000a35
+At time             14033000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000124, y_buf_data = fffff985
+At time             14035000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000128, y_buf_data = fffffb7f
+At time             14037000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000012c, y_buf_data = 0000059b
+At time             14039000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000130, y_buf_data = 0000120e
+At time             14041000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000134, y_buf_data = 00000098
+At time             14043000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000138, y_buf_data = 000003fc
+At time             14045000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000013c, y_buf_data = 000004e6
+At time             14047000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000013c, y_buf_data = 00000000
+At time             15603000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000140, y_buf_data = 00000000
+At time             15611000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000140, y_buf_data = 00000202
+At time             15613000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000144, y_buf_data = fffffe9a
+At time             15615000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000148, y_buf_data = ffffff43
+At time             15617000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000014c, y_buf_data = fffffc12
+At time             15619000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000150, y_buf_data = 00000664
+At time             15621000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000154, y_buf_data = ffffffa5
+At time             15623000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000158, y_buf_data = 00000033
+At time             15625000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000015c, y_buf_data = 0000027f
+At time             15627000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000160, y_buf_data = 000001e9
+At time             15629000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000164, y_buf_data = 000022ee
+At time             15631000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000164, y_buf_data = 00000000
+At time             17187000, done_intr_o = 0, done_led_o = 0, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 00000168, y_buf_data = 00000000
+At time             17195000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000168, y_buf_data = 000021bf
+At time             17197000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000016c, y_buf_data = 0000002e
+At time             17199000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000170, y_buf_data = 00000052
+At time             17201000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000174, y_buf_data = 00000028
+At time             17203000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000178, y_buf_data = ffffff2c
+At time             17205000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000017c, y_buf_data = 00000094
+At time             17207000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000180, y_buf_data = ffffffd2
+At time             17209000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000184, y_buf_data = ffffff7f
+At time             17211000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 00000188, y_buf_data = 00000065
+At time             17213000, done_intr_o = 0, done_led_o = 0, y_buf_en = 1, y_buf_wr_en = 1, y_buf_addr = 0000018c, y_buf_data = 0000022c
+At time             17215000, done_intr_o = 1, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+At time             17231000, done_intr_o = 0, done_led_o = 1, y_buf_en = 0, y_buf_wr_en = 0, y_buf_addr = 0000018c, y_buf_data = 00000000
+save_wave_config {C:/Users/ddd31/Desktop/streamline/tb_mlp_top_behav.wcfg}
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  2 17:34:34 2024...

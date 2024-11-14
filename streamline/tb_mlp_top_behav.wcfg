@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_mlp_top_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_mlp_top_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="17206395000fs"></ZoomStartTime>
+      <ZoomEndTime time="17209685001fs"></ZoomEndTime>
+      <Cursor1Time time="17215000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="247"></NameColumnWidth>
+      <ValueColumnWidth column_width="270"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_mlp_top_1/i_CLK" type="logic">
+      <obj_property name="ElementShortName">i_CLK</obj_property>
+      <obj_property name="ObjectShortName">i_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/done_led_o" type="logic">
+      <obj_property name="ElementShortName">done_led_o</obj_property>
+      <obj_property name="ObjectShortName">done_led_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/y_buf_wr_en" type="logic">
+      <obj_property name="ElementShortName">y_buf_wr_en</obj_property>
+      <obj_property name="ObjectShortName">y_buf_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/y_buf_en" type="logic">
+      <obj_property name="ElementShortName">y_buf_en</obj_property>
+      <obj_property name="ObjectShortName">y_buf_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/y_buf_addr" type="array">
+      <obj_property name="ElementShortName">y_buf_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_buf_addr[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/y_buf_data" type="array">
+      <obj_property name="ElementShortName">y_buf_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_buf_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/c_ref_out" type="array">
+      <obj_property name="ElementShortName">c_ref_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">c_ref_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider9">
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/uut/u_top_LAYER1/i_BUF_RD_EN" type="logic">
+      <obj_property name="ElementShortName">i_BUF_RD_EN</obj_property>
+      <obj_property name="ObjectShortName">i_BUF_RD_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mlp_top_1/uut/u_top_LAYER1/i_BUF_ADR" type="array">
+      <obj_property name="ElementShortName">i_BUF_ADR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">i_BUF_ADR[6:0]</obj_property>
+   </wvobject>
+</wave_config>

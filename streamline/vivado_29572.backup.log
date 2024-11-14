@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  2 16:24:03 2024
+# Process ID: 29572
+# Current directory: C:/Users/ddd31/Desktop/streamline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16444 C:\Users\ddd31\Desktop\streamline\dsd_mlp.xpr
+# Log file: C:/Users/ddd31/Desktop/streamline/vivado.log
+# Journal file: C:/Users/ddd31/Desktop/streamline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ddd31/Desktop/streamline/dsd_mlp.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/ddd31/Desktop/streamline/tb_pu_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 954.129 ; gain = 312.703
+update_compile_order -fileset sources_1
+launch_simulation
+boost::filesystem::remove: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: "C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: "C:/Users/ddd31/Desktop/streamline/dsd_mlp.sim/sim_1/behav/xsim/simulate.log"

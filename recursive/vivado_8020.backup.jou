@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 31 21:36:15 2024
+# Process ID: 8020
+# Current directory: C:/Users/ddd31/Desktop/00_RTL_Skeleton
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27584 C:\Users\ddd31\Desktop\00_RTL_Skeleton\dsd_mlp.xpr
+# Log file: C:/Users/ddd31/Desktop/00_RTL_Skeleton/vivado.log
+# Journal file: C:/Users/ddd31/Desktop/00_RTL_Skeleton\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ddd31/Desktop/00_RTL_Skeleton/dsd_mlp.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+update_module_reference design_1_top_mlp_0_0
+launch_simulation
+open_wave_config C:/Users/ddd31/Desktop/00_RTL_Skeleton/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+save_wave_config {C:/Users/ddd31/Desktop/00_RTL_Skeleton/top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/ddd31/Desktop/00_RTL_Skeleton/top_tb_behav.wcfg
+source top_tb.tcl
+run all
+relaunch_sim
+run all
+close_sim

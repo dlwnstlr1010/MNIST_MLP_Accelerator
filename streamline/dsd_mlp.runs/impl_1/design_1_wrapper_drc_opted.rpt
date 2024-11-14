@@ -1,0 +1,86 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jun  2 15:52:46 2024
+| Host         : ±è¼±Àç running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 10
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPOP-1 | Warning  | PREG Output pipelining | 10         |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[0].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[0].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[1].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[1].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[2].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[2].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[3].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[3].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[4].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[4].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[5].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[5].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[6].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[6].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[7].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[7].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[8].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[8].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[9].ACC_MODE_0/acc0 output design_1_i/top_mlp_0/inst/main/u_top_LAYER5/streamline_inst/mac_gen[9].ACC_MODE_0/acc0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+

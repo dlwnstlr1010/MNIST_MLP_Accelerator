@@ -1,0 +1,40 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1620 -y 50 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1620 -y 80 -defaultsOSRD
+preplace port done_led_o -pg 1 -lvl 6 -x 1620 -y 400 -defaultsOSRD
+preplace port start_i -pg 1 -lvl 0 -x -10 -y 350 -defaultsOSRD
+preplace port rst_n -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace port clk -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 4 -x 1180 -y 180 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 5 -x 1470 -y 260 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 520 -y 100 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 3 -x 890 -y 160 -defaultsOSRD
+preplace inst top_mlp_0 -pg 1 -lvl 1 -x 160 -y 330 -defaultsOSRD
+preplace netloc top_mlp_0_mlp_done 1 1 1 290 110n
+preplace netloc top_mlp_0_y_buf_addr 1 1 4 300J 270 NJ 270 NJ 270 1320
+preplace netloc top_mlp_0_y_buf_data 1 1 4 310 280 NJ 280 NJ 280 NJ
+preplace netloc top_mlp_0_y_buf_en 1 1 4 N 320 NJ 320 NJ 320 1330J
+preplace netloc top_mlp_0_y_buf_wr_en 1 1 4 NJ 340 NJ 340 NJ 340 1340
+preplace netloc top_mlp_0_done_led_o 1 1 5 NJ 300 NJ 300 NJ 300 1320J 400 NJ
+preplace netloc start_i_1 1 0 1 NJ 350
+preplace netloc rst_n_1 1 0 4 10 210 NJ 210 750 70 1030J
+preplace netloc clk_1 1 0 5 N 190 310 200 740 60 1040 100 1340J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 220 N 220 720
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 730 100n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 1320 180n
+preplace netloc processing_system7_0_DDR 1 2 4 720J 50 NJ 50 NJ 50 NJ
+preplace netloc smartconnect_0_M00_AXI 1 3 1 N 160
+levelinfo -pg 1 -10 160 520 890 1180 1470 1620
+pagesize -pg 1 -db -bbox -sgen -100 0 1750 440
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_bram_cntlr_cnt":"4",
+   "da_clkrst_cnt":"2",
+   "da_ps7_cnt":"1"
+}

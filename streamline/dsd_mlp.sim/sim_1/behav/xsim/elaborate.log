@@ -1,0 +1,44 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_mlp_top_1_behav xil_defaultlib.tb_mlp_top_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/mlp_inputScale.v" Line 1. Module mlp_inputScale doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer1.v" Line 1. Module local_control_layer1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer2.v" Line 1. Module local_control_layer2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer3.v" Line 1. Module local_control_layer3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer4.v" Line 1. Module local_control_layer4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/ddd31/Desktop/streamline/dsd_mlp.srcs/sources_1/new/local_control_layer5.v" Line 1. Module local_control_layer5 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.x_buffer(PATH="C:/Users/ddd31/De...
+Compiling module xil_defaultlib.mlp_inputScale
+Compiling module xil_defaultlib.w_buffer_full(PATH="C:/Users/ddd...
+Compiling module xil_defaultlib.streamline_acc_1
+Compiling module xil_defaultlib.streamline_mac
+Compiling module xil_defaultlib.streamline_operator_1_default
+Compiling module xil_defaultlib.local_control_layer1
+Compiling module xil_defaultlib.top_LAYER1(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer2
+Compiling module xil_defaultlib.streamline_operator_2_default
+Compiling module xil_defaultlib.w_buffer_half(LAYER="2",PATH="C:...
+Compiling module xil_defaultlib.top_LAYER2(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer3
+Compiling module xil_defaultlib.w_buffer_half(ROW_NUM=64,LAYER="...
+Compiling module xil_defaultlib.top_LAYER3(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer4
+Compiling module xil_defaultlib.streamline_operator_4_default
+Compiling module xil_defaultlib.w_buffer_half(COL_NUM=32,ROW_NUM...
+Compiling module xil_defaultlib.top_LAYER4(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.local_control_layer5
+Compiling module xil_defaultlib.streamline_acc_1_norelu
+Compiling module xil_defaultlib.streamline_operator_5_default
+Compiling module xil_defaultlib.w_buffer_full(COL_NUM=10,ROW_NUM...
+Compiling module xil_defaultlib.y_buf_ctrl
+Compiling module xil_defaultlib.top_LAYER5(PATH="C:/Users/ddd31/...
+Compiling module xil_defaultlib.mlp_top(PATH="C:/Users/ddd31/Des...
+Compiling module xil_defaultlib.tb_mlp_top_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mlp_top_1_behav
